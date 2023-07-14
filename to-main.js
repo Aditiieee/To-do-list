@@ -22,7 +22,7 @@ listContainer.addEventListener("click", function(e) {
 	if(e.target.tagName === "LI"){
 		e.target.classList.toggle("checked");
 		if(e.target.classList.contains("checked")){
-			createConfetti(e.target);
+			confetti();
 		}
 		saveData();
 	}
